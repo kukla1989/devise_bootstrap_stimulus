@@ -1,3 +1,206 @@
+$light-gray: #777;
+$slightly-gray: #f2f2f2;
+$violet: #551975;
+$light-violet: #8626B7;
+
+
+
+//----------make everything violet----------
+.btn {
+  background-color: $violet!important;
+  border: $violet!important;
+  &:hover {
+    background-color: blueviolet!important;
+  }
+}
+
+a {
+  color: $violet;
+  &:hover {
+    color: blueviolet;
+  }
+}
+
+.violet {
+  background-color: $violet;
+  &:hover {
+    background-color: blueviolet;
+  }
+}
+
+a.nav-link {
+  color: $light-violet!important;
+  &:hover {
+    color: blueviolet!important;
+  }
+}
+
+//--------------------------articles-------------------
+textarea {
+  height:10em;
+  background-color: $slightly-gray !important;
+}
+
+.article {
+  border-bottom: solid 3px #A653FF;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+}
+.form-control {
+  background-color: $slightly-gray;
+}
+.content {
+  margin: 3em;
+}
+
+@mixin main {
+  margin: auto;
+  margin-bottom: 2em;
+  padding: 1em;
+  border: 3px solid blueviolet;
+  display: block;
+}
+
+.main {
+  @include main;
+  width: 65%;
+  margin-top: 3em;
+}
+
+.main_min {
+  @include main;
+  width: 30%;
+  margin-top: 1em;
+}
+
+.main_sentence {
+  @include main;
+  width: 45%;
+  margin-top: 3em;
+}
+
+.main_mobile {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+a {
+  margin: 0.3em;
+}
+
+ul.error {
+  color:red;
+}
+
 body {
-  background-color: #CCCCCC;
+  background-color: $slightly-gray;
+}
+
+button {
+  margin: 0.2em;
+}
+
+input.form-control {
+  background-color: $slightly-gray !important;
+}
+
+//-------------------pagination---------------------
+.pagination {
+  margin: auto;
+  width: 50%;
+}
+
+.digg_pagination {
+  cursor: default;
+  /* self-clearing method: */ }
+.digg_pagination a, .digg_pagination span, .digg_pagination em {
+  padding: 0.2em 0.5em;
+  display: block;
+  float: left;
+  margin-right: 1px; }
+.digg_pagination .disabled {
+  color: #999999;
+  border: 1px solid #dddddd; }
+.digg_pagination .current {
+  font-style: normal;
+  font-weight: bold;
+  background: $violet;
+  color: white;
+  border: 1px solid blueviolet; }
+.digg_pagination a {
+  text-decoration: none;
+  color: blueviolet;
+  border: 1px solid blueviolet; }
+.digg_pagination a:hover, .digg_pagination a:focus {
+  color: #000033;
+  border-color: #000033; }
+.digg_pagination .page_info {
+  background: blueviolet;
+  color: white;
+  padding: 0.4em 0.6em;
+  width: 22em;
+  margin-bottom: 0.3em;
+  text-align: center; }
+.digg_pagination .page_info b {
+  color: blueviolet;
+  background: blueviolet;
+  padding: 0.1em 0.25em; }
+.digg_pagination:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; }
+* html .digg_pagination {
+  height: 1%; }
+*:first-child + html .digg_pagination {
+  overflow: hidden;
+}
+
+//-----------------footer------------
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 3px solid #d9d9d9;
+  color:blueviolet!important;
+
+  a {
+    color: #555;
+
+    &:hover {
+      color: #222;
+    }
+  }
+  small {
+    float: left;
+  }
+
+  ul {
+    float: right;
+    list-style: none;
+
+
+    li {
+      float: left;
+      margin-left: 15px;
+    }
+  }
+}
+
+//----------learn english by sentences----------
+#sentence {
+  text-align: center;
+}
+
+div.sentence {
+  margin: auto;
+  width: 40%;
+}
+
+#last-sentence {
+  color:$light-gray;
+  font-size: small;
+  text-align: center;
+  margin: 0;
+  display: none;
 }
