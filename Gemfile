@@ -80,3 +80,6 @@ end
 group :production do
   gem "pg"
 end
+
+gem "will_paginate", "~> 3.3"
+gem "rails-controller-testing"
